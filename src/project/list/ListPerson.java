@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import project.*;
 
-public class ListPerson {
+public class ListPerson implements IBaseOperationsCollection<List<Person>>{
 
 	private List<Person> list;
 	
@@ -21,7 +21,7 @@ public class ListPerson {
 		list.add(person);
 	}
 	
-	public void removeAllSamePerson (Person person) {
+	public void removePerson (Person person) {
 		List<Person> newList = new ArrayList<>();
 		newList.add(person);
 		list.removeAll(newList);

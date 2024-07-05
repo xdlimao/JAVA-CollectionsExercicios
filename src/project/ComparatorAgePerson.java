@@ -1,8 +1,6 @@
-package project.list;
+package project;
 
 import java.util.Comparator;
-
-import project.Person;
 
 public class ComparatorAgePerson implements Comparator<Person> {
 
